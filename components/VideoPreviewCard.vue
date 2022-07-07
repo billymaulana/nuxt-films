@@ -20,9 +20,9 @@ const previewImageUrl = computed(() => {
 const typeText = computed(() => {
   switch (props.video.type) {
     case "Trailer":
-      return "Bande-annonce";
+      return "Trailer";
     case "Teaser":
-      return "Pré-vue";
+      return "Teaser";
     case "Clip":
       return "Clip";
     default:
