@@ -1,0 +1,118 @@
+:root {
+  --brand: hsl(120, 49%, 47%); // TODO replace with primary
+  --primary: var(--brand);
+  --primary-invert: #fff;
+
+  --success: #37b24d;
+  --success-invert: #fff;
+  --danger: #f03e3e;
+  --danger-invert: #fff;
+  --warning: #f76707;
+  --warning-invert: #fff;
+  --focus-ring: hsl(211, 97%, 61%);
+
+  --white: hsl(210, 17%, 100%);
+  --gray-0: hsl(210, 17%, 98%);
+  --gray-1: hsl(210, 17%, 95%);
+  --gray-2: hsl(210, 16%, 93%);
+  --gray-3: hsl(210, 14%, 89%);
+  --gray-4: hsl(210, 14%, 83%);
+  --gray-5: hsl(210, 11%, 71%);
+  --gray-6: hsl(210, 7%, 56%);
+  --gray-7: hsl(210, 9%, 31%);
+  --gray-8: hsl(210, 10%, 23%);
+  --gray-9: hsl(210, 11%, 15%);
+  --black: hsl(210, 11%, 0%);
+
+  --link: var(--brand);
+  --link-visited: hsla(288, 56%, 75%, 1);
+
+  --text-1: var(--gray-8);
+  --text-2: var(--gray-7);
+  --text-3: var(--gray-6);
+  --text-white: var(--white);
+
+  --border-color: hsl(0, 0%, 88%);
+  --surface-1: var(--gray-0);
+  --surface-2: var(--gray-1);
+  --surface-3: var(--gray-2);
+  --surface-4: var(--gray-3);
+
+  --backdrop-color: hsla(210, 11%, 0%, 0.9);
+
+  --shadow-color: 220 3% 15%;
+  --shadow-strength: 1%;
+  --shadow-1: 0 1px 2px -1px hsl(var(--shadow-color) /
+        calc(var(--shadow-strength) + 9%));
+  --shadow-2: 0 3px 5px -2px hsl(var(--shadow-color) /
+          calc(var(--shadow-strength) + 3%)),
+    0 7px 14px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%));
+  --shadow-3: 0 -1px 3px 0 hsl(var(--shadow-color) /
+          calc(var(--shadow-strength) + 2%)),
+    0 1px 2px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 2%)),
+    0 2px 5px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 4%)),
+    0 4px 12px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%)),
+    0 12px 15px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 7%));
+  --shadow-4: 0 -2px 5px 0 hsl(var(--shadow-color) /
+          calc(var(--shadow-strength) + 2%)),
+    0 1px 1px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 3%)),
+    0 2px 2px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 3%)),
+    0 5px 5px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 4%)),
+    0 9px 9px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%)),
+    0 16px 16px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 6%));
+  --shadow-5: 0 -1px 2px 0 hsl(var(--shadow-color) /
+          calc(var(--shadow-strength) + 2%)),
+    0 2px 1px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 3%)),
+    0 5px 5px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 3%)),
+    0 10px 10px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 4%)),
+    0 20px 20px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%)),
+    0 40px 40px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 7%));
+  --shadow-6: 0 -1px 2px 0 hsl(var(--shadow-color) /
+          calc(var(--shadow-strength) + 2%)),
+    0 3px 2px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 3%)),
+    0 7px 5px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 3%)),
+    0 12px 10px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 4%)),
+    0 22px 18px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%)),
+    0 41px 33px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 6%)),
+    0 100px 80px -2px hsl(var(--shadow-color) /
+          calc(var(--shadow-strength) + 7%));
+  --inner-shadow-0: inset 0 0 0 1px
+    hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%));
+  --inner-shadow-1: inset 0 1px 2px 0
+    hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%));
+  --inner-shadow-2: inset 0 1px 4px 0
+    hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%));
+  --inner-shadow-3: inset 0 2px 8px 0
+    hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%));
+  --inner-shadow-4: inset 0 2px 14px 0
+    hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%));
+
+  --sidebar-shadow: 0 0 16px
+    hsl(var(--shadow-color) / calc(var(--shadow-strength) + 9%));
+  --inner-sidebar-shadow: inset -1px 0 0 0 hsl(var(--shadow-color) /
+        calc(var(--shadow-strength) + 9%));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --brand: hsl(120, 61%, 33%);
+    --focus-ring: hsl(211, 97%, 61%);
+
+    --text-1: var(--white);
+    --text-2: var(--gray-3);
+    --text-3: var(--gray-6);
+
+    --link: var(--brand);
+    --link-visited: hsla(289, 60%, 32%, 1);
+
+    --border-color: hsl(0, 0%, 12%);
+
+    --surface-1: var(--gray-9);
+    --surface-2: var(--gray-8);
+    --surface-3: var(--gray-7);
+    --surface-4: var(--gray-6);
+
+    --shadow-color: 220 40% 2%;
+    --shadow-strength: 25%;
+  }
+}

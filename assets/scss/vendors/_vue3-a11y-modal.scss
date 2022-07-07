@@ -1,0 +1,19 @@
+@import "vue3-a11y-modal/dist/vue-modal-dialog.css";
+
+.modal {
+  z-index: 9;
+
+  .modal__overlay {
+    background: $t-backdrop-color;
+  }
+
+  .modal__content {
+    width: max-content;
+    background: $t-surface-1;
+    border-radius: $radius;
+  }
+
+  .modal__content-title {
+    margin-bottom: space(3);
+  }
+}

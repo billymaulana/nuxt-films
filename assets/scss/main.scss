@@ -1,0 +1,93 @@
+// @import "open-props/style";
+// @import "open-props/normalize";
+// @import "open-props/media";
+// @import "open-props/buttons";
+
+@import "./imports";
+
+@import "./css-variables";
+@import "./helpers/spacing";
+@import "./base/reset";
+
+$icomoon-font-path: "../icomoon/fonts/";
+@import "../icomoon/style.scss";
+
+html {
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
+
+body {
+  --scrollbar-color: var(--gray-7);
+  -webkit-text-size-adjust: none;
+  accent-color: var(--link);
+  background: var(--surface-1);
+  block-size: 100%;
+  caret-color: var(--link);
+  color: $t-text;
+  color-scheme: light;
+  font-family: $family-primary;
+  line-height: $body-line-height;
+  scrollbar-color: var(--scrollbar-color) transparent;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: $family-heading;
+  font-weight: 700;
+  line-height: $header-line-height;
+}
+
+.h1 {
+  font-size: $font-size-5xl;
+}
+.h2 {
+  font-size: $font-size-3xl;
+}
+
+.h3 {
+  font-size: $font-size-xl;
+}
+.h4 {
+  font-size: $font-size-lg;
+}
+.h5 {
+  font-size: $font-size-base;
+  line-height: $body-line-height;
+}
+.h6 {
+  font-size: $font-size-sm;
+  line-height: $body-line-height;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: $t-link;
+
+  // &:visited {
+  //   color: $t-link-visited;
+  // }
+}
+
+// main {
+//   display: flex;
+//   flex-wrap: wrap;
+//   place-content: center;
+//   gap: var(--size-5);
+// }
+
+.has-text-warning {
+  color: $t-warning;
+}
+
+@import "./vendors/all";

@@ -1,0 +1,11 @@
+@function space($space-key: $default-spacing-value) {
+  @if type-of($space-key) == number {
+    $space-key: "#{$space-key}";
+  }
+
+  @if map-has-key($spacing-values, $space-key) == false {
+    @error "The space #{$space-key} was not set in $spacing-values";
+  }
+
+  @return (map-get($spacing-values, $space-key));
+}

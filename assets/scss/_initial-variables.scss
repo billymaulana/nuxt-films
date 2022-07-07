@@ -1,0 +1,72 @@
+$family-primary: "Lato", sans-serif;
+$family-secondary: "Montserrat", sans-serif;
+
+$family-heading: $family-secondary;
+
+$radius: 0.5rem;
+$radius-small: 0.25rem;
+
+$speed: 75ms;
+$speed-slow: 125ms;
+$speed-slower: 250ms;
+
+$spacing-values: (
+  "000": -0.5rem,
+  "00": -0.25rem,
+  "1": 0.25rem,
+  "2": 0.5rem,
+  "3": 1rem,
+  "4": 1.25rem,
+  "5": 1.5rem,
+  "6": 1.75rem,
+  "7": 2rem,
+  "8": 3rem,
+  "9": 4rem,
+  "10": 5rem,
+  "11": 7.5rem,
+  "12": 10rem,
+  "13": 15rem,
+  "14": 20rem,
+  "15": 30rem,
+);
+
+$size-fluid-1: clamp(0.5rem, 1vw, 1rem);
+$size-fluid-2: clamp(1rem, 2vw, 1.5rem);
+$size-fluid-3: clamp(1.5rem, 3vw, 2rem);
+$size-fluid-4: clamp(2rem, 4vw, 3rem);
+$size-fluid-5: clamp(4rem, 5vw, 5rem);
+$size-fluid-6: clamp(5rem, 7vw, 7.5rem);
+$size-fluid-7: clamp(7.5rem, 10vw, 10rem);
+$size-fluid-8: clamp(10rem, 20vw, 15rem);
+$size-fluid-9: clamp(15rem, 30vw, 20rem);
+$size-fluid-10: clamp(20rem, 40vw, 30rem);
+$size-content-1: 20ch;
+$size-content-2: 45ch;
+$size-content-3: 60ch;
+$size-header-1: 20ch;
+$size-header-2: 25ch;
+$size-header-3: 35ch;
+$size-xxs: 240px;
+$size-xs: 360px;
+$size-sm: 480px;
+$size-md: 768px;
+$size-lg: 1024px;
+$size-xl: 1440px;
+$size-xxl: 1920px;
+
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-base: 1rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.25rem;
+$font-size-2xl: 1.5rem;
+$font-size-3xl: 1.875rem;
+$font-size-4xl: 2.25rem;
+$font-size-5xl: 3rem;
+$font-size-6xl: 3.75rem;
+$font-size-7xl: 4.5rem;
+$font-size-8xl: 6rem;
+$font-size-9xl: 8rem;
+
+$body-line-height: 1.5;
+$header-line-height: 1.25;
